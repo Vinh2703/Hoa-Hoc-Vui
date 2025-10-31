@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App Hóa học vui</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- MÀN HÌNH CHÀO -->
+  <section id="splash-screen" class="splash-screen">
+    <img src="images/logo.png" alt="Logo trường" class="school-logo" />
+    <h1 class="app-title">App<br>Hóa học vui</h1>
+    <h2 class="school-name">Trường TH&THCS Cà Nàng<br><span class="xa">Xã Mường Chiên</span></h2>
+    <p class="slogan">Học mà chơi, chơi mà học</p>
+
+    <div class="molecules">
+      <span class="bubble h2o">H₂O</span>
+      <span class="bubble co2">CO₂</span>
+      <span class="bubble nacl">NaCl</span>
+    </div>
+
+    <img src="images/flask.png" alt="Bình hóa học" class="flask" />
+    <button id="startBtn" class="start-btn">BẮT ĐẦU ➜</button>
+  </section>
+
+  <!-- MÀN HÌNH CHÍNH -->
+  <section id="main-screen" class="main-screen hidden">
+    <header class="app-header">
+      <h1>🔬 HÓA HỌC VUI</h1>
+      <p>Khám phá thế giới hóa học qua thí nghiệm và trò chơi</p>
+    </header>
+
+    <main class="main-menu">
+      <div class="menu-grid">
+        <button class="menu-btn blue" id="btnThucHanh">
+          <img src="icons/experiment.png" alt="Thí nghiệm" />
+          <span>Thí nghiệm mô phỏng</span>
+        </button>
+
+        <button class="menu-btn orange" id="btnGiaiThich">
+          <img src="icons/explain.png" alt="Giải thích" />
+          <span>Giải thích hiện tượng</span>
+        </button>
+
+        <button class="menu-btn green" id="btnHoiDap">
+          <img src="icons/ai.png" alt="AI" />
+          <span>Hỏi đáp AI</span>
+        </button>
+
+        <button class="menu-btn purple" id="btnTroChoi">
+          <img src="icons/game.png" alt="Trò chơi" />
+          <span>Trò chơi hóa học</span>
+        </button>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <p>© 2025 Trường TH&THCS Cà Nàng - Xã Mường Chiên</p>
+    </footer>
+  </section>
+
+  <!-- Âm thanh -->
+  <audio id="bg-music" src="audio/nhacnen.mp3"></audio>
+  <audio id="boilingSound" src="audio/boiling.mp3"></audio>
+  <audio id="dropSound" src="audio/drop.mp3"></audio>
+  <audio id="gasSound" src="audio/gas.mp3"></audio>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
