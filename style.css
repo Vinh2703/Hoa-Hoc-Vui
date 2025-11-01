@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  overflow: hidden;
+}
+
+.hidden { display: none; }
+
+.splash-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.school-logo {
+  width: 120px;
+  margin-bottom: 10px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.app-title {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.school-name {
+  font-size: 1.2em;
+}
+
+.xa {
+  font-size: 0.9em;
+  color: #ffeb3b;
+}
+
+.slogan {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.flask {
+  width: 120px;
+  margin-top: 10px;
+  animation: bounce 3s infinite ease-in-out;
+}
+
+.start-btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: white;
+  color: #007bff;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.start-btn:hover {
+  background-color: #ffeb3b;
+}
+
+.bubble {
+  position: absolute;
+  opacity: 0.8;
+  font-weight: bold;
+  animation: float 6s infinite ease-in-out;
+}
+.h2o { top: 20%; left: 10%; font-size: 1.8em; }
+.co2 { top: 10%; right: 15%; font-size: 1.6em; }
+.nacl { bottom: 25%; right: 30%; font-size: 1.4em; }
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-25px); }
+  100% { transform: translateY(0); }
+}
+
+.main-screen {
+  padding: 20px;
+  background-color: white;
+  color: #333;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.menu-btn {
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.blue { background-color: #2196f3; }
+.orange { background-color: #ff9800; }
+.green { background-color: #4caf50; }
+.purple { background-color: #9c27b0; }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+body {
+  background-color: #f0f8ff;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+body {
+  background-color: #f0f8ff;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+body {
+  background-color: #f0f8ff;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  text-align: center;
+  padding: 30px;
+}
+
+input {
+  padding: 10px;
+  width: 60%;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #00cc99;
+  box-shadow: 0 0 10px #00cc99;
+}
+
+.glow-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.glow-button:hover {
+  background-color: #45a049;
+  box-shadow: 0 0 10px #00ffcc;
+  transform: scale(1.05);
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
