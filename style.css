@@ -97,6 +97,8 @@ body {
 .function-screen {
   text-align: center;
   padding-top: 60px;
+  background-color: #0f1c2e;
+  height: 100vh;
 }
 
 .beaker {
