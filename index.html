@@ -7,31 +7,29 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Màn hình mở đầu -->
-  <div class="splash-screen">
+  <!-- Splash Screen -->
+  <section id="splash">
     <img src="assets/images/logo.png" alt="Logo" class="logo" />
-    <h1 class="logo-text">HÓA HỌC VUI</h1>
+    <h1 class="title">HÓA HỌC VUI</h1>
     <button id="startBtn">BẮT ĐẦU</button>
     <div class="bubbles"></div>
-  </div>
+  </section>
 
-  <!-- Màn hình chức năng -->
-  <div class="function-screen hidden">
-    <img src="assets/images/beaker.png" alt="Lọ thí nghiệm" class="beaker" />
-
-    <div class="icon-bar">
-      <img src="assets/images/h2o.png" alt="H2O" />
-      <img src="assets/images/o2.png" alt="CO2" />
+  <!-- Menu chính -->
+  <section id="main-menu" class="hidden">
+    <h2>Lọ thí nghiệm</h2>
+    <div class="molecule-bar">
+      <img src="assets/images/h2o.png" alt="H₂O" />
+      <img src="assets/images/o2.png" alt="O₂" />
       <img src="assets/images/nacl.png" alt="NaCl" />
     </div>
-
     <div class="function-buttons">
       <button>Thí nghiệm ảo</button>
       <button>Giải thích hiện tượng</button>
       <button>Trò chơi hóa học</button>
       <button>Hỏi đáp AI</button>
     </div>
-  </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
