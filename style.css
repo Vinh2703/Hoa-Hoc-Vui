@@ -124,3 +124,38 @@ body {
     opacity: 0;
   }
 }
+.formula {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 5px #000;
+}
+.beaker.react {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.reaction-label {
+  position: absolute;
+  top: 20px;
+  font-size: 18px;
+  color: #00ffff;
+  text-shadow: 0 0 5px #000;
+  animation: fade 3s ease-out;
+}
+
+@keyframes fade {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}

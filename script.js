@@ -63,3 +63,74 @@ icons.forEach(icon => {
     }
   });
 });
+function generateBubbles() {
+  setInterval(() => {
+    const bubble = document.createElement('div');
+    bubble.className = 'bubble';
+
+    const img = document.createElement('img');
+    img.src = molecules[Math.floor(Math.random() * molecules.length)];
+    img.style.width = '100%';
+    img.style.height = '100%';
+    img.style.borderRadius = '50%';
+    img.style.objectFit = 'contain';
+
+    const label = document.createElement('span');
+    label.className = 'formula';
+    label.textContent = getFormulaFromImage(img.src);
+
+    bubble.appendChild(img);
+    bubble.appendChild(label);
+    bubble.style.left = Math.random() * window.innerWidth + 'px';
+    bubblesContainer.appendChild(bubble);
+
+    setTimeout(() => {
+      bubble.remove();
+    }, 5000);
+  }, 800);
+}
+
+function getFormulaFromImage(src) {
+  if (src.includes('h2o')) return 'H₂O';
+  if (src.includes('o2')) return 'O₂';
+  if (src.includes('nacl')) return 'NaCl';
+  return '';
+}
+icons.forEach(icon => {
+  icon.addEventListener('click', () => {
+    const name = icon.alt;
+    switch (name) {
+      case 'H2O':
+        molecules = ['assets/images/h2o.png'];
+        correctSound.play();
+        showReaction('H₂O');
+        break;
+      case 'CO2':
+        molecules = ['assets/images/o2.png'];
+        correctSound.play();
+        showReaction('O₂');
+        break;
+      case 'Biểu tượng tổng hợp':
+        molecules = ['assets/images/nacl.png'];
+        correctSound.play();
+        showReaction('NaCl');
+        break;
+      default:
+        wrongSound.play();
+    }
+  });
+});
+function showReaction(formula) {
+  const beaker = document.querySelector('.beaker');
+  beaker.classList.add('react');
+
+  const label = document.createElement('div');
+  label.className = 'reaction-label';
+  label.textContent = `Phản ứng với ${formula}`;
+  beaker.parentElement.appendChild(label);
+
+  setTimeout(() => {
+    beaker.classList.remove('react');
+    label.remove();
+  }, 3000);
+}
