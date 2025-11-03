@@ -104,3 +104,14 @@ body {
     opacity: 0;
   }
 }
+.bubble {
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  animation: rise 5s linear forwards;
+  opacity: 1;
+  transition: opacity 5s ease-out;
+  object-fit: contain;
+}
