@@ -4,7 +4,7 @@ const labScene = document.querySelector('.lab-scene');
 const bubblesContainer = document.querySelector('.bubbles');
 
 const molecules = [
-  'assets/images/H2O.png',
+  'assets/images/h2o.png',
   'assets/images/o2.png',
   'assets/images/nacl.png'
 ];
@@ -14,7 +14,7 @@ const sounds = {
   wrong: 'assets/audio/wrong.mp3.mp3',
   boiling: 'assets/audio/boiling.mp3.mp3',
   drop: 'assets/audio/drop.mp3.mp3',
-  gas: 'assets/audio/Gas.mp3.mp3'
+  gas: 'assets/audio/gas.mp3.mp3'
 };
 
 startBtn.addEventListener('click', () => {
@@ -38,5 +38,6 @@ function startBubbleEffect() {
 
 function playSound(name) {
   const audio = new Audio(sounds[name]);
+  audio.onerror = () => console.warn(`Không thể phát âm thanh: ${name}`);
   audio.play();
 }
