@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hỏi đáp Hóa học với AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="hoidap-container">
+    <h2>🧪 Hỏi đáp Hóa học Vui</h2>
+    <input type="text" id="questionInput" placeholder="Nhập câu hỏi hóa học..." />
+    <button onclick="sendQuestion()">Gửi</button>
+    <div id="answerBox"></div>
+  </div>
+
+  <script src="hoidap.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hỏi đáp Hóa học Vui</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Thêm thư viện hiệu ứng Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+  <!-- Nhạc nền -->
+  <audio id="bgMusic" src="assets/audio/background.mp3" autoplay loop></audio>
+  <button onclick="toggleMusic()">🔊 Nhạc nền</button>
+
+  <div id="hoidap-container" class="animate__animated animate__fadeIn">
+    <h2 class="animate__animated animate__fadeInDown">🧪 Hỏi đáp Hóa học Vui</h2>
+    <input type="text" id="questionInput" class="animate__animated animate__fadeInUp" placeholder="Nhập câu hỏi hóa học..." />
+    <button class="glow-button" onclick="sendQuestion()">Gửi</button>
+    <div id="answerBox" class="fade-in"></div>
+  </div>
+
+  <script src="hoidap.js"></script>
+</body>
+</html>
+<link rel="manifest" href="manifest.json" />
+<meta name="theme-color" content="#4CAF50" />
