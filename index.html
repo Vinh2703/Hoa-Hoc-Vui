@@ -7,27 +7,42 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Splash Screen -->
+  <!-- Màn hình mở đầu -->
   <section id="splash">
-    <img src="assets/images/logo.png" alt="Logo" class="logo" />
-    <h1 class="title">HÓA HỌC VUI</h1>
+    <div class="logo-container">
+      <img src="assets/images/logo.png" alt="Logo" class="logo" />
+    </div>
     <button id="startBtn">BẮT ĐẦU</button>
     <div class="bubbles"></div>
   </section>
 
-  <!-- Menu chính -->
+  <!-- Màn hình chức năng -->
   <section id="main-menu" class="hidden">
-    <h2>Lọ thí nghiệm</h2>
-    <div class="molecule-bar">
-      <img src="assets/images/h2o.png" alt="H₂O" />
-      <img src="assets/images/o2.png" alt="O₂" />
-      <img src="assets/images/nacl.png" alt="NaCl" />
+    <div class="background-decor">
+      <img src="assets/images/beaker.png" class="decor" alt="Lọ thí nghiệm" />
+      <img src="assets/images/h2o.png" class="decor" alt="H₂O" />
+      <img src="assets/images/o2.png" class="decor" alt="O₂" />
+      <img src="assets/images/nacl.png" class="decor" alt="NaCl" />
     </div>
+
+    <h2 class="menu-title">Lọ thí nghiệm</h2>
     <div class="function-buttons">
-      <button>Thí nghiệm ảo</button>
-      <button>Giải thích hiện tượng</button>
-      <button>Trò chơi hóa học</button>
-      <button>Hỏi đáp AI</button>
+      <button class="btn experiment">
+        <img src="assets/images/icon-experiment.png" alt="Thí nghiệm" />
+        Thí nghiệm ảo
+      </button>
+      <button class="btn explain">
+        <img src="assets/images/icon-explain.png" alt="Giải thích" />
+        Giải thích hiện tượng
+      </button>
+      <button class="btn game">
+        <img src="assets/images/icon-game.png" alt="Trò chơi" />
+        Trò chơi hóa học
+      </button>
+      <button class="btn ai">
+        <img src="assets/images/icon-ai.png" alt="AI" />
+        Hỏi đáp AI
+      </button>
     </div>
   </section>
 
