@@ -9,7 +9,7 @@ startBtn.addEventListener('click', () => {
   mainMenu.classList.remove('hidden');
 });
 
-// Tạo bong bóng đơn giản
+// Tạo bong bóng
 setInterval(() => {
   const bubble = document.createElement('div');
   bubble.className = 'bubble';
